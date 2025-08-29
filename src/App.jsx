@@ -87,9 +87,9 @@ function App() {
 
       {/* Contacto */}
       <section id="contacto" className="contacto-section">
-        <h3 className="section-title">📲 Contáctanos 3001234567</h3>
+        <h3 className="section-title">📲 Contáctanos 3107610211</h3>
         <p className="contacto-text">Haz tu pedido por WhatsApp y dale a tu mascota lo mejor.</p>
-        <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer" className="contacto-button">
+        <a href="https://wa.me/573107610211" target="_blank" rel="noopener noreferrer" className="contacto-button">
           Enviar mensaje
         </a>
       </section>
