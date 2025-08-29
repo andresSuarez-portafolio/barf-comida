@@ -1,0 +1,306 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Padding horizontal para móviles */
+}
+
+/* Header / Navbar */
+header {
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+nav.container {
+  display: flex;
+  flex-direction: column; /* Apila elementos en móvil */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Espacio entre logo y nav-links */
+}
+
+.logo {
+  font-size: 1.8rem; /* Tamaño más grande para el logo */
+  font-weight: bold;
+  text-align: center; /* Centrar logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los links se envuelvan */
+  justify-content: center; /* Centra los links */
+  gap: 1rem; /* Espacio entre los links */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+  padding: 0.25rem 0.5rem; /* Pequeño padding para hacerlos más clickeables */
+}
+
+.nav-links a:hover {
+  color: #fde68a;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #f97316, #facc15);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem; /* Padding ajustado para móviles */
+}
+
+.hero-title {
+  font-size: 2.2rem; /* Tamaño de fuente para móviles */
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2; /* Mejora la apariencia en múltiples líneas */
+}
+
+.hero-subtitle {
+  font-size: 1rem; /* Tamaño de fuente para móviles */
+  max-width: 42rem;
+  margin: 0 auto 1.5rem;
+  padding: 0 0.5rem; /* Espaciado interno */
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: white;
+  color: #ea580c;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1rem;
+}
+
+.hero-button:hover {
+  background-color: #fef3c7;
+  transform: translateY(-3px) scale(1.02); /* Efecto más pronunciado */
+}
+
+/* Secciones */
+.beneficios-section, .productos-section, .contacto-section {
+  padding: 3rem 1rem; /* Padding ajustado para móviles */
+}
+
+.beneficios-section {
+  background-color: white;
+}
+
+.productos-section {
+  background-color: #f9fafb;
+}
+
+.contacto-section {
+  background-color: #ea580c;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem; /* Más padding para que destaque */
+}
+
+.section-title {
+  font-size: 1.8rem; /* Tamaño de fuente para móviles */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem; /* Espacio debajo del título */
+  color: #333; /* Color para títulos en secciones claras */
+}
+
+.contacto-section .section-title {
+  color: white; /* Color blanco para el título de contacto */
+}
+
+
+/* Beneficios */
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Columnas más pequeñas en móvil */
+  gap: 1rem; /* Espacio entre tarjetas */
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.beneficio-card {
+  padding: 1.5rem; /* Padding ajustado */
+  background-color: #ffedd5;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.beneficio-card:hover {
+  transform: translateY(-5px) scale(1.03); /* Efecto mejorado */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.beneficio-icon {
+  font-size: 2rem; /* Icono más pequeño para móvil */
+  display: block;
+  margin-bottom: 0.5rem; /* Espacio entre icono y texto */
+}
+
+.beneficio-text {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Productos */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Columnas ajustadas para móvil */
+  gap: 1.5rem; /* Espacio entre tarjetas */
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.producto-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.producto-img {
+  width: 8rem; /* Tamaño de imagen para móvil */
+  height: 8rem;
+  border-radius: 9999px;
+  margin: 0 auto 1rem;
+  object-fit: cover;
+  border: 3px solid #f97316; /* Borde para destacar */
+}
+
+.producto-title {
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.producto-desc {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Contacto */
+.contacto-text {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.contacto-button {
+  display: inline-block;
+  background-color: white;
+  color: #ea580c;
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1.1rem;
+}
+
+.contacto-button:hover {
+  background-color: #fef3c7;
+  transform: scale(1.08);
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: #d1d5db;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem; /* Fuente más pequeña para el footer */
+}
+
+/* Media Queries para pantallas más grandes (Tablets y Desktops) */
+@media (min-width: 768px) {
+  nav.container {
+    flex-direction: row; /* Vuelve a poner en fila en pantallas grandes */
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .logo {
+    font-size: 2rem; /* Tamaño de logo para pantallas grandes */
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .beneficios-section, .productos-section, .contacto-section {
+    padding: 5rem 1rem; /* Más padding en pantallas grandes */
+  }
+
+  .beneficios-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets */
+    gap: 2rem;
+  }
+
+  .producto-img {
+    width: 10rem; /* Tamaño de imagen para pantallas grandes */
+    height: 10rem;
+  }
+
+  .producto-title {
+    font-size: 1.5rem;
+  }
+
+  .productos-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets */
+    gap: 2rem;
+  }
+
+  .contacto-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+}
