@@ -89,7 +89,7 @@ nav.container {
   color: #ea580c;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
@@ -98,7 +98,7 @@ nav.container {
 
 .hero-button:hover {
   background-color: #fef3c7;
-  transform: translateY(-3px) scale(1.02); /* Efecto más pronunciado */
+  transform: translateY(-3px) scale(1.02);
 }
 
 /* Secciones */
@@ -118,49 +118,48 @@ nav.container {
   background-color: #ea580c;
   color: white;
   text-align: center;
-  padding: 4rem 1rem; /* Más padding para que destaque */
+  padding: 4rem 1rem;
 }
 
 .section-title {
   font-size: 1.8rem; /* Tamaño de fuente para móviles */
   font-weight: bold;
   text-align: center;
-  margin-bottom: 2rem; /* Espacio debajo del título */
-  color: #333; /* Color para títulos en secciones claras */
+  margin-bottom: 2rem;
+  color: #333;
 }
 
 .contacto-section .section-title {
-  color: white; /* Color blanco para el título de contacto */
+  color: white;
 }
-
 
 /* Beneficios */
 .beneficios-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Columnas más pequeñas en móvil */
-  gap: 1rem; /* Espacio entre tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
   max-width: 72rem;
   margin: 0 auto;
 }
 
 .beneficio-card {
-  padding: 1.5rem; /* Padding ajustado */
+  padding: 1.5rem;
   background-color: #ffedd5;
   border-radius: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .beneficio-card:hover {
-  transform: translateY(-5px) scale(1.03); /* Efecto mejorado */
+  transform: translateY(-5px) scale(1.03);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .beneficio-icon {
-  font-size: 2rem; /* Icono más pequeño para móvil */
+  font-size: 2rem;
   display: block;
-  margin-bottom: 0.5rem; /* Espacio entre icono y texto */
+  margin-bottom: 0.5rem;
 }
 
 .beneficio-text {
@@ -171,8 +170,8 @@ nav.container {
 /* Productos */
 .productos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Columnas ajustadas para móvil */
-  gap: 1.5rem; /* Espacio entre tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
   max-width: 72rem;
   margin: 0 auto;
 }
@@ -192,12 +191,12 @@ nav.container {
 }
 
 .producto-img {
-  width: 8rem; /* Tamaño de imagen para móvil */
+  width: 8rem;
   height: 8rem;
   border-radius: 9999px;
   margin: 0 auto 1rem;
   object-fit: cover;
-  border: 3px solid #f97316; /* Borde para destacar */
+  border: 3px solid #f97316;
 }
 
 .producto-title {
@@ -240,7 +239,7 @@ footer {
   color: #d1d5db;
   text-align: center;
   padding: 1.5rem;
-  font-size: 0.9rem; /* Fuente más pequeña para el footer */
+  font-size: 0.9rem;
 }
 
 /* Media Queries para pantallas más grandes (Tablets y Desktops) */
@@ -252,7 +251,7 @@ footer {
   }
 
   .logo {
-    font-size: 2rem; /* Tamaño de logo para pantallas grandes */
+    font-size: 2rem;
   }
 
   .nav-links {
@@ -272,16 +271,16 @@ footer {
   }
 
   .beneficios-section, .productos-section, .contacto-section {
-    padding: 5rem 1rem; /* Más padding en pantallas grandes */
+    padding: 5rem 1rem;
   }
 
   .beneficios-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
   .producto-img {
-    width: 10rem; /* Tamaño de imagen para pantallas grandes */
+    width: 10rem;
     height: 10rem;
   }
 
@@ -290,7 +289,7 @@ footer {
   }
 
   .productos-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
